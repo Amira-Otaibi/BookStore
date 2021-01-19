@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+ <html lang="en">
+  
+  <head>
+    <title>LogIn</title>
+    <meta name="description" content=" This is our book store if you are looking for any books just click the link and join us "/>
+    <meta name="keyword" content="Store,Online, Book,Informations,Developers"/>
+    <meta name="Book+" content="Online Book Store "/>
+    <link rel="stylesheet" href="styles.css">
+	<script src="myScript.js"></script>
+	
+  </head>
+   
+   <body>
+<!--this is the carve of header-->
+<div class="container">
+    <div class="wave"></div>
+   </div>
+<!--this is the menue of header-->
+<nav id="navigation">
+<!--this is the logo of our web-->
+<a href="index.html" class="logo">SkyBOOKS<span>+</span></a><!--if user click in logo it will transfer him to Home page-->
+       <!--this is the list of menu optin-->
+       <ul class="links">
+          <li><a href="About.html">About</a></li><!--if user click in About it will transfer him to About page-->
+          
+          <li><a href="Books.html">Books</a></li><!--if user click in Books it will transfer him to Books page-->
+          <!--this is the drobed list for login/sing in option -->
+           <li class="dropdown"><a  class="trigger-drop">Contact<i class="arrow"></i></a>
+            <ul class="drop">
+            <li><a href="LogIn.html">  Log in</a></li><!--if user click in LogIn it will transfer him to LogIn page-->
+            <li><a href="signUp.html">Sing in</a></li><!--if user click in signUp it will transfer him to signUp page-->
+           </ul>
+         </li>
+         <!--this is the feedback option -->
+         <li><a href="Feedback.html">FeedBack</a></li><!--if user click in Feedback it will transfer him to Feedback page-->
+       </ul>
+    </nav>
+<div>
+<!--this is the discrptin-->
+<h3 class="des">Sky BOOKS</h3><!--here put description about our website-->
+
+ 
+
+<pre class="des1">
+      <strong>"Books let you travel without moving your feet."</strong><!--here put description about our website-->
+   We have established this electronic library in order with these 
+      circumstances of this year also to win your satisfaction.</pre><!--here put description about our website-->
+
+ 
+
+<!--this is theimage header and search filed -->
+<div class="hederImage1"><img src="images/hed14.png" height="300" width="300" alt="hederIcon"/></div><!--here put images-->
+
+ 
+
+
+ 
+</div>
+
+	
+         <div class="Login">
+            <div class="Login-screen">
+                <div class="app-titleLog">
+                    <h1>Log In</h1>
+                </div>
+				
+                 <!--ask the user for username and password then click submit button -->
+                    <div class="Login-form">
+                    <div class="control-groupLog">
+					<form action="index.html" method="post"  onsubmit="return verif_LogIn()">
+                    <input type="text" value="" placeholder="Username" id="login-name" onfocus="this.style.backgroundColor = '#F0DF8B'; this.style.color = '#2c3e50'; "
+                              onblur="change_back(this)"><br/><br/>
+                    
+                    <div class="control-groupLog">
+                    <input type="password"  value="" placeholder="Password" id="login-pass" onfocus="this.style.backgroundColor = '#F0DF8B'; this.style.color = '#2c3e50'; "
+                              onblur="change_back(this)">
+                    </div>
+					<div >
+                     <label>
+                     <input class="remember" type="checkbox" checked="checked" name="remember" > Remember me
+                     </label></div><br/>
+                    
+					<div id="error" style="display:none;"> </div>
+                    <input type="submit" class="btnSignUp btn-primary btn-large btn-block" value="Login" />
+                    </form>
+					
+                    <p>Don't have one? <a href="SignUp.html" >Sign Up</a></p>
+                   
+                </div>
+            </div>
+        </div>
+	</div>
+		     <!--this is the footer of the page that contin all needed information-->
+ <div class="footer">
+ <a href="index.html">Home</a> | <a href="About.html">About</a> |<a href="Books.html">Books</a> |<a href="LogIn.html">Contact</a> |<a href="FeedBack.html">FeedBack</a><br />
+        Copyright  2020 |Sky Books| Designed/Coded by Team 1 </div> 
+</body>
+</html>

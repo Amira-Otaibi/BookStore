@@ -1,0 +1,840 @@
+* {
+    box-sizing: border-box;
+  }
+
+  /*boy style*/
+  body {
+    background-color: #eff2f6;
+    line-height: normal;
+	padding:0px;
+	margin:0px;
+	font-family:sans-serif;
+	font-size: 16px;
+  }
+  /*style for links in nav bar list */
+    a, a:hover {
+    color: #ACBDC5;
+    text-decoration: none;
+    font-weight: 900;
+  }
+   /*style for nav bar list */
+   nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 60px;
+    background: #2c3e50;
+    min-width: 570px;
+  }
+   /*style for logo in nav bar list */
+  nav .logo {
+    position: relative;
+    float: left;
+    line-height: 60px;
+    padding: 0 15px;
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+   /*style for + sing in nav bar logo */
+  nav .logo span {
+    display: inline-block;
+    position: relative;
+    top: -8px;
+    font-size: 13pt;
+  }
+   /*style effect for nav bar logo */
+  nav .logo:hover {
+    background: #C5D0D6;
+	height:60px;
+	border-radius: 2px;
+    color:#2c3e50;
+  }
+   /*style for all itmes on nav bar list*/
+   nav .links {
+    float: right;
+    margin-right: 30px;
+    position: relative;
+  }
+ 
+  nav .links li {
+    
+    position: relative;
+    margin: 2px;
+    display: inline-block;
+	
+  }
+  
+   nav .links li > a {
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 30px;
+    height: 30px;
+  }
+   /*style effect to list  */
+   nav .links li > a:hover {
+    background-color: #C5D0D6;
+    border-radius: 2px;
+    color:#2c3e50;
+  }
+   /*style for droped list -contact item */
+   nav .links li > a[class^="trigger-"] {
+    padding-right: 43px;
+  }
+
+  nav .links li > a .arrow {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 35%;
+    text-align: left;
+    right: 10px;
+    border-width: 5px 5px 0 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.3) transparent;
+  }
+  nav .links li > a .arrow:after {
+    content: "";
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    top: -10px;
+    left: -15px;
+    position: absolute;
+    height: 15px;
+  }
+    /*style for item of droped list  --login/sing up*/
+    nav .links li ul {
+
+    position:absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    border-radius: 2px;
+	z-index: 1;
+	display: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	border: none;
+    cursor: pointer;
+  }
+   /*style to disply droped list */
+  nav .links li ul > li {
+    color: black;
+    display: block;
+    text-align: left;
+  }
+   /*style effect whene click on item on the list  */
+  nav .links li ul > li:hover {
+    background: #C5D0D6;
+    
+    
+  }
+  nav .links li ul > li:hover > a {
+    background: #C5D0D6;
+    color:#2c3e50;
+  }
+  nav .links li:hover > .drop {
+
+  display:block;
+
+  }
+  /*style for container class that hold header  */
+.container {
+  position: relative;
+  background: #2c3e50;
+  height: 57vh;
+  
+}
+
+  
+ /*style for header */
+.wave {
+  position: absolute;
+  height: 92px;
+  width: 100%;
+  background: #2c3e50;
+  bottom: 0;
+  
+}
+
+.wave::before, .wave::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+}
+
+.wave::before {
+  width: 54%;
+  height: 109%;
+  background-color: #eff2f6;
+  right: 0.05%;
+  top: 61%;
+}
+.wave::after {
+  width: 55%;
+  height: 100%;
+  background-color: #2c3e50;
+  left: -0.005%;
+  top: 33%;
+}
+ /*style for description of  header */
+
+ .des{
+  position: relative;
+  color:#F0DF8B;
+  position: relative;
+  text-align: left;
+  margin-top:-230px;
+  margin-left:30px;
+  font-size:50px;
+  font-weight: 600;
+}
+
+.des1{
+  position: relative;
+  text-align: left;
+  margin-top:-40px;
+  margin-left:30px;
+  color:#C5D0D6;
+  font-size:20px;
+  font-weight:100;}
+ /*style for image of  header */
+.hederImage1{
+  position: relative;
+  margin-top: -200px;
+  margin-right: 15px;
+  float: right;}
+
+ 
+
+
+ /*style for card1 class to defind border that Contain  new books release  */	   
+.card1{
+  height: 220px;
+  width: 70%;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+  margin-top: 100px;
+  margin-left: 200px;
+  margin-bottom:10px;
+  cursor: pointer;
+  
+}
+
+.card1:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+ /*style for title of new release book*/	
+.card1 h3{
+ 
+  font-weight: 600;
+  line-height:70px;
+  margin-left: 200px;
+  
+  font-family:sans-serif;
+  font-size: 26px;
+  color:#C5D0D6;
+}
+ /*style for description of new books release */	
+.card1 p{
+  font-weight: 100;
+  line-height:30px;
+  margin-left:200px;
+  font-size: 18px;
+  color:#2c3e50;
+  margin-top:-10px;
+  
+}
+ /*style for image of  new books release */
+.card1 img{
+  height:203px;
+  width: 150px;
+  position: relative;
+  float:left;
+  margin-top:10px;
+  margin-left:30px;
+ 
+}
+ /*style for pay button of  new books release */
+.card1 button{
+  background-color: #C5D0D6;
+  border-radius: 5px;
+  width: 80px;
+  height:40px;
+  margin-top: 10px;
+  margin-left: 600px;
+  
+}
+
+.card1 a{
+  color: #2c3e50;
+}
+
+.card-1{
+ 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 126px;
+}
+ /*style effect to max the size of border when mouse click or move up the border */
+@media(max-width: 100px){
+  .card{
+    margin: 20px;
+  }
+}
+
+ /*style for card3 class to defind border that Contain  new books release  */	
+.card3{
+  height:100px;
+  width: 40%;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+  margin-top: 160px;
+  margin-left: 400px;
+  margin-bottom:10px;
+  cursor: pointer;
+}
+ /*style effect to max the size of border when mouse click or move up the border */
+.card3:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+ /*style for title of  new books release */
+.card3 h3{
+  font-weight: 800;
+  line-height:70px;
+  margin-left: 0px;
+  font-family:sans-serif;
+  font-size: 26px;
+  color:#C5D0D6;
+  padding-left:100px;
+  padding-top:20px;
+}
+ /*style for image of  new books release */
+.card3 img{
+  height:100px;
+  width: 90px;
+  position: relative;
+  float:right;
+  margin-top:0px;
+  margin-right:0px;
+  
+ 
+}
+
+ /*style for footer*/
+.footer {
+  clear: both;
+  width: 1263.5px;
+  height:80px;
+  padding:20px;
+  margin-top:90px;  
+  text-align: center;
+  border-top: 0px solid #25211e;
+  color: #F0DF8B;
+  background-color: #2c3e50;
+	
+}
+
+.footer a{
+  color: #C5D0D6;
+  font-weight: 200;
+}
+/*-------------------------------------Feedback and Communication Style------------------------------------------*/
+
+  /*style a specific input type and select textarea*/
+  .FBCS input[type=text], select,textarea {
+    width: 90%;/*set width text select,textarea */
+    padding: 12px 20px;/*space around an element's content(text), inside of any defined borders*/
+    margin: 8px 0;/*space around elements outside of any defined borders */
+    border: 1px solid #ccc; /* border width,solid-,color #ccc*/
+    border-radius: 4px;/*set radius submit*/
+	text-align: left;/*set text to the left */
+	
+  }
+  /*style a specific input type=submit*/
+  .FBCSSubmit input[type=submit] {
+    width:30%;/*set width submit*/
+    background-color:#C5D0D6;/*set background-color submit*/
+    color: #2c3e50;/*set text color*/
+    padding: 14px;/*space around an element's content(text), inside of any defined borders(submit)*/
+    margin: 10px 0;/*space around elements(submit), outside of any defined borders */
+    border: none;/*no border */
+    border-radius: 4px;/*set radius submit*/
+    text-align: center;/*set text to the center */
+    font-size:100%;/*text size*/
+	font-family:sans-serif ;/*set text family */
+	
+  }
+  
+  
+  /*select the element that has focus*/
+  .FBCS input[type=text]:focus {
+    border: 1px solid #555;/* border width,solid-,color #555*/
+  }
+
+  /* box*/
+  div .FeedbackCommunicationBox{
+    background-color:#fff;/*set background-color #8598ad*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);/*applies shadow to FeedbackCommunicationBox*/
+    border-radius: 5px 5px 6px 6px;/*set radius box */
+    text-align: center;/*set text to the center */
+    color:#2c3e50;/*set color in text */
+	padding: 10px;/*space between elements and box*/
+  }
+  .FeedbackCommunication {
+    margin:auto;/*space around elements( box ), outside of any defined borders */
+    margin-top:180px;/*space(top)between box and outside of any defined borders*/
+	margin-bottom:40px;/*space(bottom)between box and outside of any defined borders*/
+    width: 34%;/*width elements*/
+  }
+  
+  .FBCS select,input,textarea{
+     font-family:sans-serif ;/*set text family */
+     color:GRAY;/*set color in text */
+	 background-color: #ECF0F1;/*set background-color gray */
+     border-radius: 3px;/*set radius */
+     font-size: 16px;/*text size*/
+
+     
+  }
+  .OptionSelectTopic{
+     display: none;/*hide and show elements without deleting*/
+  }
+  
+
+/*-------------------------------------About Style------------------------------------------*/
+  
+
+  .AboutColumn {
+    float: left;/*can be used to wrap text around Column*/
+    width: 25%;/*width elements(column)*/
+    margin-bottom: 70px;/*space(Bottom)between card and outside of any defined borders (footer)*/
+    padding: 0 8px;/*space between elements and card*/
+  }
+
+  .AboutCard {
+    background-color:#fff;/*set background-color*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);/*applies shadow to FeedbackCommunicationBox*/
+    margin: 8px;/*space between card and outside of any defined borders*/
+    padding: 10px;/*space between card and elements into card*/
+  }
+
+  .AboutOurTeam{
+    padding: 70px;/*space between text and heder text*/
+	text-align: center;/*set text to the center */
+    color:#2c3e50;/*set text color */
+  }
+
+  .AboutButton {
+    border: none;/*no border */
+    padding: 7px;/*space between Button and text into Button*/
+    margin-left:-6px;/*space(left)between Button and outside of any defined borders(card)*/
+    background-color:#C5D0D6;/*set background-color Button*/
+    color: #2c3e50;/*set text color*/
+    width: 90%;/*width elements(Button)*/
+  }
+
+  .AboutButton:hover {/*selector is used to select elements when you mouse over them*/
+    background-color: #2c3e50;/*set background-color Button*/
+    color:#C5D0D6;/*set text color Button*/
+  }
+  
+  .About p,h2{
+    text-align: center;/*set text to the center */
+    color:#2c3e50;/*set text color */
+	
+  }
+  .About h1{
+    margin-left:0px;
+	margin-top:100px;
+	
+  }
+  .About img{
+    display: block;/*displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width*/
+    margin-left: auto;/*space(left)between img and outside of any defined borders(card)*/
+    margin-right: auto;/*space(right)between img and outside of any defined borders(card)*/
+    width:70%/*width elements(img)*/
+  }
+  /*---------------------------Books---------------------------------*/
+ 
+.btnMenu{/*butten that down of the header*/
+  position: relative;/*position of the button*/ 
+  background-color: #C5D0D6;/*color of the button*/ 
+  border:none;/*without border*/
+  width: 248px;/*width of the button*/ 
+  height:35px;/*hieght of the button*/ 
+  font-weight:bold;
+  color:#2c3e50;
+  margin-top:7.8px;
+}
+
+
+ section.sectionBook  {/*The separation between the specialties of books*/
+   background-color:#2c3e50;
+   text-align:center;
+   padding:90px;
+}
+.sectionImage{/*proparties of sectionBook image */
+ position: relative;
+ margin-top: -200px;
+ margin-right: 15px;
+ float: right;}/*the image will be on the right*/
+
+h3.textSectionBook {  /*proparties of sectionBook text */
+  font-style: oblique;
+  text-align:center;
+  color:#e6dbac;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+ 
+
+
+
+  .columnBook {/*Columns that arrange books*/
+    float: left; /*the position of the column book */
+    width: 25%; /*the width of the colmn book */
+    margin-bottom: 10px;
+  }
+
+  .BookCard {  /*the card that contain book and author and price and discription*/
+    box-shadow: 0 20px 8px 0 rgba(0, 0, 0, 0.2); 
+    margin: 8px;
+    background-color:white;
+	
+  
+  }
+
+  .container33 {
+    padding: 0 16px;
+  }
+
+  .container33::after, .row33::after {/*that will display the box in the table */
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .title { /*that contain author */
+    color: #2c3e50;
+	text-align: center;
+  }
+
+  button.btnBook  { /*button if i click on it will but the book */
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: #2c3e50;
+	font-weight:bold;
+    background-color:#C5D0D6;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  p.bookp{ 
+    text-align: center;
+    color:#2d5986;
+  }
+  h3.bookH3{
+   text-align: center;
+   color:#2d5986;
+  }
+ 
+  img.imegeBook{/*proparties of the image book */
+    display: block;
+    margin-left: auto; /*the image will be in the center */
+    margin-right: auto;/*the image will be in the center */
+    width:120px;
+	height:165px;
+  }
+
+
+ /*style for card3 class to defind border that Contain btnmenu this button    */    
+ .cardBook{
+  width: 100%;
+  border-radius: 4px;
+  position:relative;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+  margin-top: 50px;
+  margin-bottom:10px;
+  
+}
+
+
+ .Bookscontainer {
+  position: relative;
+  background: #2c3e50;
+  height: 74vh;
+  
+}
+.Booksdes{
+  color:#F0DF8B;
+  position: relative;
+  text-align: left;
+  margin-top:-300px;
+  margin-left:30px;
+  font-size:50px;
+  font-weight: 600;
+}
+.BooksdesHeder a{
+	color:#2c3e50;
+}
+.Booksdes1{
+  position: relative;
+  text-align: left;
+  margin-top:-30px;
+  margin-left:30px;
+  color:#C5D0D6;
+  font-size:20px;
+  font-weight:100;}
+  
+ /*style for image of  header */
+.BooksHederImage1{
+  position: relative;
+  margin-top: -235px;
+  margin-right: 15px;
+  float: right;}
+ 
+ /*--------------------------SignUp Style---------------------------*/
+  * {
+    box-sizing: border-box;
+    }
+      /*focus  */
+    *:focus {
+      outline: none;
+     }
+     /*put size for border */
+    .SignUp {
+      margin: 80px auto;
+	  margin-top:150px;
+      width: 300px;
+      }
+   
+      /* color of border*/
+    .SignUp-screen {
+	background-color:#fff;/*set background-color  */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+	
+    border-radius: 5px
+    }
+       /*put signup word in the center */
+    .app-titleSign {
+      text-align: center;
+      color: #2c3e50;
+      }
+           /*set the text in center */
+      .SignUp-form {
+        text-align: center;
+        }
+          /*do margin to the bottom  */
+        .control-groupSign {
+          margin-bottom: 10px;
+          }
+
+            /*put all words in center  */
+          input {
+            text-align: center;
+            background-color: #ECF0F1;
+            border: 2px solid transparent;
+            border-radius: 3px;
+            font-size: 16px;
+            font-weight: 200;
+            padding: 10px 0;
+            width: 250px;
+            transition: border .5s;
+            }
+  /*let the circle around user name and password and email colored */
+     input:focus {
+      border: 2px solid #9494b8;
+      box-shadow: none;
+      }
+     
+     /* set Property for button*/
+    .btnSignUp {
+      border: 2px solid transparent;
+      background: #2c3e50;
+      color:#fff;
+      font-size: 16px;
+      line-height: 25px;
+      padding: 10px 0;
+      text-decoration: none;
+      text-shadow: none;
+      border-radius: 3px;
+      box-shadow: none;
+      transition: 0.25s;
+      display: block;
+      width: 250px;
+      margin: 0 auto;
+    }
+
+    /* set a color when mouse click in buttoon */
+    .btnSign:hover {
+      background-color: #2c3e50;
+    }
+    /* set color for link */
+    #a1 {
+      color: #fff;
+    }
+/*--------------------------login Style---------------------------*/
+* {
+    box-sizing: border-box;
+    }
+      /*focus  */
+    *:focus {
+      outline: none;
+  }
+  .Login {
+      margin: 80px auto;
+	  margin-top:170px;
+      width: 300px;
+      }
+    /* color of border*/
+    .Login-screen {
+    background-color:#fff;/*set background-color  */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 5px
+    }
+       /*put login word in the center */
+    .app-titleLog {
+      text-align: center;
+      color: #2c3e50;;
+      }
+       /*set the text in center */
+      .Login-form {
+        text-align: center;
+        }
+         /*do margin to the bottom  */
+        .control-groupLog {
+          margin-bottom: 10px;
+          }
+         /*put all words in center  */
+           input {
+            text-align: center;
+            background-color: #ECF0F1;
+            border: 2px solid transparent;
+            border-radius: 3px;
+            font-size: 16px;
+            font-weight: 200;
+            padding: 10px 0;
+            width: 250px;
+            transition: border .5s;
+            }
+  
+    /*let the circle around user name and password colored */
+     input:focus {
+      border: 2px solid #9494b8;
+      box-shadow: none;
+      }
+    /* set Property for button*/
+    .btnLog {
+      border: 2px solid transparent;
+      background: #2c3e50;
+      color:#fff;
+      font-size: 16px;
+      line-height: 25px;
+      padding: 10px 0;
+      text-decoration: none;
+      text-shadow: none;
+      border-radius: 3px;
+      box-shadow: none;
+      transition: 0.25s;
+      display: block;
+      width: 250px;
+      margin: 0 auto;
+    }
+      /*the color of bottom */
+    .btnLog:hover {
+      background-color: #2c3e50;
+    }
+    /*the color of link */
+    input.remember{
+		width: 10px;
+        height: 10px;
+	}
+
+  #a2 {
+    color: #fff;
+  }
+  /*--------------------------checkOut Style---------------------------*/
+  
+  * {
+      box-sizing: border-box;
+      }
+      
+      *:focus {
+        outline: none;
+    }
+	    .checkOut {
+        margin: 80px auto;
+        width: 300px;
+		margin-top:160px;
+        }
+      /* color of border*/
+      .checkOut-screen {
+      background-color:#fff;/*set background-color  */
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      border-radius: 5px
+      }
+         /*put payment word in the center */
+      .app-title {
+        text-align: center;
+        color: #2c3e50;
+        }
+       /*set the text in center */
+        .checkOut-form {
+          text-align: center;
+          }
+             /*do margin to the bottom  */
+          .control-group {
+            margin-bottom: 10px;
+            }
+             /*put all words in center  */
+            input {
+              text-align: center;
+              background-color: #ECF0F1;
+              border: 2px solid transparent;
+              border-radius: 3px;
+              font-size: 16px;
+              font-weight: 200;
+              padding: 10px 0;
+              width: 250px;
+              transition: border .5s;
+              }
+    
+      /*let the circle around user name and password colored */
+      input:focus {
+        border: 2px solid #9494b8;
+        box-shadow: none;
+        }
+
+       /* set Property for button*/
+      .btnCheck {
+        border: 2px solid transparent;
+        background: #2c3e50;
+        color:#fff;
+        font-size: 16px;
+        line-height: 25px;
+        padding: 10px 0;
+        text-decoration: none;
+        text-shadow: none;
+        border-radius: 3px;
+        box-shadow: none;
+        transition: 0.25s;
+        display: block;
+        width: 250px;
+        margin: 0 auto;
+      }
+         /*the color of bottom */
+      .btnCheck:hover {
+        background-color: #2c3e50;
+      }
